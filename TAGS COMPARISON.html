@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tag Comparison</title>
+    <style>
+        body { background-color: #f0f8ff; font-family: Arial, sans-serif; }
+        .container { margin: 20px; padding: 20px; }
+        .div-style { background-color: cyan; padding: 10px; }
+        .span-style { background-color: orange; padding: 3px; }
+        .section-style { background-color: purple; color: white; padding: 10px; }
+        .article-style { background-color: lightgreen; padding: 10px; }
+        .nav-style { background-color: lightcoral; padding: 10px; }
+        .figure-style { background-color: lightgray; padding: 10px; }
+        .label-style { background-color: yellow; padding: 3px; }
+        .legend-style { background-color: pink; padding: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>1. &lt;div&gt; vs &lt;span&gt;</h2>
+        <p>This is a <span class="span-style">span</span> inside a paragraph.</p>
+        <div class="div-style">
+            This is a div, which is a block-level container.
+        </div>
+        
+        <h2>2. &lt;div&gt; vs &lt;section&gt;</h2>
+        <div class="div-style">Generic container div</div>
+        <section class="section-style">Semantic section container</section>
+
+        <h2>3. &lt;p&gt; vs &lt;article&gt;</h2>
+        <p>Single paragraph content.</p>
+        <article class="article-style">
+            <h3>Article Title</h3>
+            <p>Content inside an article, can have multiple paragraphs.</p>
+        </article>
+
+        <h2>4. &lt;nav&gt; vs &lt;a&gt;</h2>
+        <nav class="nav-style">
+            <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a>
+        </nav>
+        <p>Single <a href="#">anchor link</a> outside nav.</p>
+
+        <h2>5. &lt;figure&gt; vs &lt;img&gt;</h2>
+        <figure class="figure-style">
+            <img src="SPACE LOVE.jpg" alt="Space-Example Image" width="200">
+            <figcaption>Figure caption describing the image.</figcaption>
+        </figure>
+        <p>Space - Standalone image: <img src="SPACE RESEARCH.jpeg" alt="Example" width="100"></p>
+
+        <h2>6. &lt;label&gt; vs &lt;legend&gt;</h2>
+        <form>
+            <label class="label-style" for="name">Name:</label>
+            <input type="text" id="name">
+            <fieldset>
+                <legend class="legend-style">Personal Information</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </fieldset>
+        </form>
+
+        <h2>7. &lt;strong&gt; vs &lt;b&gt; vs &lt;em&gt;</h2>
+        <p>This is <strong>strong text</strong>, <b>bold text</b>, and <em>emphasized text</em>.</p>
+    </div>
+</body>
+</html>
